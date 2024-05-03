@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+#container {
+    background: black;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    
+}
+
+
+
+#nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#nav-fixed {
+    position: fixed;
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#nav-fixed.transparent {
+    background-color: transparent;
+}
+
+
+#menu-navegacao-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#navegacao {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navegacao.active {
+    display: block;
+}
+
+#navegacao li {
+    padding: 10px;
+}
+
+#navegacao li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+#navegacao li a:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0); */
+    z-index: 1;
+    pointer-events: none;
+}
+
+#logo-principal {
+    color: white;
+    font-weight: normal;
+    font-size: 29px;
+    position: absolute;
+    width: 90%;
+    margin-left: 44px;
+    margin-top: 20%;
+    text-align: center;
+    z-index: 1;
+}
+
+#hackersec-info {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 1.3em;
+    padding-top: 120px;
+    width: 820px;
+    margin: 0 auto;
+    color: white;
+    z-index: 1;
+}
+
+#contact-form {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+#contact-form input,
+#hackersec-info #contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    ;
+    background: transparent;
+    border: 1px solid #646464;
+}
+#hackersec-info #contact-form select option{
+    color: #000000;
+}
+#hackersec-info #contact-form select{
+    width: 132.9vh;
+}
+
+#hackersec-info #button {
+    padding-top: 23px;
+}
+
+#hackersec-info #button a {
+    padding: 10px 30px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid rgb(106, 104, 104);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#hackersec-info #button a:hover {
+    background-color: rgba(106, 104, 104, 0.2);
+}
+
+#escritorios {
+    background: white;
+    padding-bottom: 140px;
+}
+
+#conteudo {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 240px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#titulo {
+    font-weight: normal;
+    font-family: "Prompt", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#brazil {
+    width: 46%;
+    height: 340px;
+    text-align: left;
+    float: left;
+    margin-right: 4%;
+}
+
+#boston {
+    width: 46%;
+    height: 340px;
+    float: right;
+}
+
+#titulo1,
+#titulo2 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapa-brazil img,
+#mapa-boston img {
+    max-width: 100%;
+    height: 340px;
+}
+
+#rodape {
+    padding-top: 45px;
+    background: #212121;
+    color: white;
+    text-align: center;
+}
+
+#rodape #nave ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rodape #nave li {
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+#rodape #nave a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: white;
+}
+
+#copyright {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+#canais {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 35px;
+}
+
+#canais a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin: 0 20px;
+    transition: background-color 0.3s ease;
+}

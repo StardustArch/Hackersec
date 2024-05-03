@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+#container {
+    background: black;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+#img-topo {
+    background: rgba(0, 0, 0, 0.689);
+    height: 420px;
+    margin-left: -20px;
+    background-image: url('/Assets/img/home-hackersec-banner-22.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#nav-fixed {
+    position: fixed;
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#nav-fixed.transparent {
+    background-color: transparent;
+}
+
+#menu-navegacao-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#navegacao {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navegacao.active {
+    display: block;
+}
+
+#navegacao li {
+    padding: 10px;
+}
+
+#navegacao li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+#navegacao li a:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+#logo-principal {
+    position: absolute;
+    width: 90%;
+    margin-left: 44px;
+    margin-top: 20%;
+    text-align: center;
+    z-index: 1;
+}
+
+#hackersec-info {
+    font-size: 20px;
+    line-height: 40px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    font-stretch: 200px;
+    font-kerning: auto;
+    padding-top: 120px;
+    font-size: 1.3em;
+    width: 820px;
+    margin: 0 auto;
+    color: white;
+    z-index: 1;
+}
+
+#porcentual {
+    margin-top: 160px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+#porcentual-conteudo {
+    width: 80%;
+    height: 200px;
+    padding: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#porcentual-direita,
+#porcentual-centro,
+#porcentual-esquerda {
+    flex: 1;
+}
+
+#porcentual #porcentual-conteudo #porcentual-direita .estilo,
+#porcentual #porcentual-conteudo #porcentual-centro .estilo,
+#porcentual #porcentual-conteudo #porcentual-esquerda .estilo {
+    font-size: 3em;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+}
+
+#referencia {
+    text-align: center;
+    margin: 140px auto;
+    color: #ffffff;
+    width: 85%;
+    padding: 0;
+}
+
+#referencia h3 {
+    font-weight: normal;
+    font-family: "Prompt", sans-serif;
+    font-size: 32px;
+}
+
+#referencia img {
+    max-width: 100%;
+    height: auto;
+}
+
+#png-conferencia {
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+}
+
+#png-conferencia .galeria {
+    float: left;
+    padding: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+#escritorios {
+    clear: both;
+    background: white;
+    padding-bottom: 140px;
+}
+
+#conteudo {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+    width: 85%;
+    overflow: hidden;
+}
+
+#titulo {
+    font-weight: normal;
+    font-family: "Prompt", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#brazil {
+    width: 46%;
+    float: left;
+    margin-right: 4%;
+}
+
+#boston {
+    width: 46%;
+    float: right;
+}
+
+#titulo1,
+#titulo2 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapa-brazil img,
+#mapa-boston img {
+    max-width: 100%;
+    height: auto;
+}
+
+#solucoes {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+    text-align: center;
+}
+
+#solucoes h3 {
+    line-height: 0;
+    letter-spacing: 4px;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: "Prompt", sans-serif;
+}
+
+#solucoes #button {
+    padding-top: 34px;
+}
+
+#solucoes #button a {
+    display: inline-block;
+    padding: 20px 60px;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid rgb(106, 104, 104);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#solucoes #button a:hover {
+    background-color: rgb(106, 104, 104, 0.2);
+}
+
+#rodape {
+    padding-top: 45px;
+    background: #212121;
+    color: white;
+    text-align: center;
+}
+
+#rodape #nave ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rodape #nave li {
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+#rodape #nave a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: white;
+}
+
+#copyright {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+#canais {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 35px;
+}
+
+#canais a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin: 0 20px;
+    transition: background-color 0.3s ease;
+}
